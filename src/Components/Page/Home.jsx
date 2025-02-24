@@ -15,7 +15,7 @@ const Home = () => {
 
   useEffect(() => {
     setLoading(true);
-    apiRequest.get("http://localhost:5555/api/getallbook")
+    apiRequest.get("/api/getallbook")
       .then((response) => {
         setBooks(response.data.data);
         setLoading(false);
